@@ -1,0 +1,30 @@
+---
+apiVersion: bundle.dist.app/v1alpha1
+kind: AppManifest
+metadata:
+  name: tinytools
+spec:
+  title: Tiny Web-based Tools
+  description: Various simple developer utilities for working with encodings and more
+  iconRef:
+    apiVersion: manifest.dist.app/v1alpha1
+    kind: GlyphIcon
+    name: main
+
+---
+apiVersion: manifest.dist.app/v1alpha1
+kind: GlyphIcon
+metadata:
+  name: main
+spec:
+  text: 👨‍💻
+  backgroundColor: rgb(51, 102, 51)
+
+---
+apiVersion: bundle.dist.app/v1alpha1
+kind: DenoProgram
+metadata:
+  name: tinytools
+spec:
+  attachKv: no
+  entryPointUrl: mod.tsx

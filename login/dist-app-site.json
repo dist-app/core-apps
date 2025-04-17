@@ -1,0 +1,18 @@
+{
+  "denoDeploy": {
+    "entryPointUrl": "mod.ts",
+    "importMapUrl": "import-map.json",
+    "databases": {"default": ""},
+    "requestTimeout": 5000
+  },
+
+  "appName": "Login service",
+  "appDesc": "User authentication and profile management",
+  "appIcon": {
+    "type": "glyph",
+    "glyph": {
+      "text": "👤",
+      "backgroundColor": "rgb(51, 102, 51)"
+    }
+  }
+}

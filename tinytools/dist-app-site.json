@@ -1,0 +1,16 @@
+{
+  "denoDeploy": {
+    "entryPointUrl": "mod.tsx",
+    "requestTimeout": 5000
+  },
+
+  "appName": "Tiny Web-based Tools",
+  "appDesc": "Various simple developer utilities for working with encodings and more",
+  "appIcon": {
+    "type": "glyph",
+    "glyph": {
+      "text": "👨‍💻",
+      "backgroundColor": "rgb(51, 102, 51)"
+    }
+  }
+}

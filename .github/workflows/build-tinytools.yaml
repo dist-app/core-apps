@@ -1,0 +1,64 @@
+name: Build 'tinytools'
+on:
+  push:
+    paths:
+      - .github/workflows/build-tinytools.yaml
+      - tinytools
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+
+    - uses: actions/checkout@v4
+
+    - name: Use Deno stable
+      uses: denoland/setup-deno@v2
+      with:
+        deno-version: v2.1
+    - name: Cache https://
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.cache/deno/remote/https
+          ~/.cache/deno/gen/https
+        key: deno-https/v2-${{ github.sha }}
+        restore-keys: deno-https/v2-
+    - name: Install dist-bundle utility
+      run: deno install --global --allow-all --no-config https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/cli/dist-bundle/main.ts
+
+    - name: Log into GitHub Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: x-access-token
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Extract metadata (tags, labels) for Docker
+      id: meta
+      uses: docker/metadata-action@902fa8ec7d6ecbf8d84d538b9b233a880e428804
+      with:
+        images: ghcr.io/dist-app/core-apps/tinytools
+        tags: |
+          type=sha
+          type=ref,event=pr
+          type=ref,event=tag
+          type=edge,branch=main
+
+    - name: Build artifact
+      id: build
+      run: dist-bundle build
+      working-directory: tinytools
+      env:
+        artifact-labels: ${{ steps.meta.outputs.labels }}
+
+    - name: Push artifact
+      run: dist-bundle push
+      working-directory: tinytools
+      env:
+        digest: ${{ steps.build.outputs.digest }}
+        destinations: ${{ steps.meta.outputs.tags }}
