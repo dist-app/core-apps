@@ -1,12 +1,11 @@
 #!/usr/bin/env -S deno run --unstable --watch --allow-env --allow-sys --allow-read --allow-net=0.0.0.0,dist-v1alpha1.deno.dev,otel.devmode.cloud
-/** @jsx h */
-/** @jsxFrag Fragment */
-import "https://deno.land/x/observability@v0.6.1/preconfigured/from-environment.ts";
-import html, { h } from "https://deno.land/x/htm@0.2.1/mod.ts";
+/** @jsxRuntime automatic *//** @jsxImportSource jsr:@hono/hono@4.7.7/jsx */
+import "jsr:@cloudydeno/opentelemetry@0.10.0/register";
+import { html } from "jsr:@dist-app/stdlib@0.1.3/support/html";
 
-import { JsonUrlLoader } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/server-sdk/modules/loader-json-url.ts";
-import { svgForIcon } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/apis/manifest/icon.ts";
-import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/server-sdk/core/single-site.ts";
+import { JsonUrlLoader } from "https://uber.danopia.net/dist-app-deno/59be68e513fd9f6d8b2037c66e4194846d20a039/server-sdk/modules/loader-json-url.ts";
+import { svgForIcon } from "https://uber.danopia.net/dist-app-deno/59be68e513fd9f6d8b2037c66e4194846d20a039/apis/manifest/icon.ts";
+import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/59be68e513fd9f6d8b2037c66e4194846d20a039/server-sdk/core/single-site.ts";
 
 const server = await setupSingleSite((app, _siteBaseUrl) => {
 
