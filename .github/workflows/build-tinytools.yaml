@@ -29,7 +29,7 @@ jobs:
         key: deno-https/v2-${{ github.sha }}
         restore-keys: deno-https/v2-
     - name: Install dist-bundle utility
-      run: deno install --global --allow-all --no-config https://uber.danopia.net/dist-app-deno/59be68e513fd9f6d8b2037c66e4194846d20a039/cli/dist-bundle/main.ts
+      run: deno install --global --allow-all --no-config https://uber.danopia.net/dist-app-deno/4e1cdc987bfd93ae0951575221da5dc1b4e59443/cli/dist-bundle/main.ts
 
     - name: Log into GitHub Container Registry
       uses: docker/login-action@v3
