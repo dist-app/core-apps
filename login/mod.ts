@@ -1,14 +1,14 @@
 #!/usr/bin/env -S deno run --unstable-kv --unstable-broadcast-channel --unstable-cron --unstable-http --watch --allow-env --allow-sys --allow-read --allow-write=${HOME}/.local/share/dist-app --allow-net --no-prompt
 import "https://deno.land/x/observability@v0.6.1/preconfigured/from-environment.ts";
 
-import { DenoKvStorage } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/server-sdk/modules/storage-deno-kv/mod.ts";
+import { DenoKvStorage } from "https://uber.danopia.net/dist-app-deno/339a41048192c8587a172734d404fb09fef0b68b/server-sdk/modules/storage-deno-kv/mod.ts";
 
 // another example usage @ https://dash.deno.com/projects/weak-squirrel-54
-import { OidcIssuer } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/lib/oidc/kv-issuer.ts";
-import { LoginServerApi } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/apis/login-server/definitions.ts";
-import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/server-sdk/core/single-site.ts";
-import { CookieAuthnMethod } from "https://uber.danopia.net/dist-app-deno/52605ca9fa7d2f5d0a26961f29f1d864c9966352/lib/auth/authn-methods/cookie.ts";
-import { PasskeyAuthnMethod } from "./lib/passkey.ts";
+import { OidcIssuer } from "https://uber.danopia.net/dist-app-deno/339a41048192c8587a172734d404fb09fef0b68b/lib/oidc/kv-issuer.ts";
+import { LoginServerApi } from "https://uber.danopia.net/dist-app-deno/339a41048192c8587a172734d404fb09fef0b68b/apis/login-server/definitions.ts";
+import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/339a41048192c8587a172734d404fb09fef0b68b/server-sdk/core/single-site.ts";
+import { CookieAuthnMethod } from "https://uber.danopia.net/dist-app-deno/339a41048192c8587a172734d404fb09fef0b68b/lib/auth/authn-methods/cookie.ts";
+import { PasskeyAuthnMethod } from "https://uber.danopia.net/dist-app-deno/339a41048192c8587a172734d404fb09fef0b68b/lib/auth/authn-methods/passkey.ts";
 
 const server = await setupSingleSite(async (app, siteBaseUrl) => {
   app.auth.addAuthnMethod(new CookieAuthnMethod({
