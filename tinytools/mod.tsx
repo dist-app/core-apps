@@ -3,9 +3,9 @@
 import "jsr:@cloudydeno/opentelemetry@0.10.0/register";
 import { html } from "jsr:@dist-app/stdlib@0.1.5/support/html";
 
-import { JsonUrlLoader } from "https://uber.danopia.net/dist-app-deno/4e1cdc987bfd93ae0951575221da5dc1b4e59443/server-sdk/modules/loader-json-url.ts";
-import { svgForIcon } from "https://uber.danopia.net/dist-app-deno/4e1cdc987bfd93ae0951575221da5dc1b4e59443/apis/manifest/icon.ts";
-import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/4e1cdc987bfd93ae0951575221da5dc1b4e59443/server-sdk/core/single-site.ts";
+import { JsonUrlLoader } from "https://uber.danopia.net/dist-app-deno/ab912d9f521ccf7b8d845591dd2400ec36de5c74/server-sdk/modules/loader-json-url.ts";
+import { svgForIcon } from "https://uber.danopia.net/dist-app-deno/ab912d9f521ccf7b8d845591dd2400ec36de5c74/apis/manifest/icon.ts";
+import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/ab912d9f521ccf7b8d845591dd2400ec36de5c74/server-sdk/core/single-site.ts";
 
 const server = await setupSingleSite((app, _siteBaseUrl) => {
 
@@ -162,5 +162,7 @@ const server = await setupSingleSite((app, _siteBaseUrl) => {
     });
   });
 
+}, {
+  disableAuth: true,
 });
 server.serveHttp();
