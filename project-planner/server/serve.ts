@@ -1,6 +1,6 @@
 
 // Start up the app server
-// import "https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/hack/meteor-server/run.ts";
+// import "https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/hack/meteor-server/run.ts";
 
 import { DdpInterface, DdpSocket } from "jsr:@dist-app/stdlib@0.1.5/ddp/server";
 import { CookieAuthnMethod } from "jsr:@dist-app/stdlib@0.1.5/auth/authn-methods/cookie";
@@ -9,17 +9,17 @@ import { EntityEngineImpl } from "jsr:@dist-app/stdlib@0.1.5/engine/engine";
 import { OidcAuthnMethod } from "jsr:@dist-app/stdlib@0.1.5/auth/authn-methods/oidc";
 import { serveRestApis } from "jsr:@dist-app/stdlib@0.1.5/engine/serve-rest";
 
-import { apiGroups, BundleConfig, entityKinds, BundleEntities } from 'https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/server-sdk/core/entities.ts';
-import { AppServer } from "https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/server-sdk/core/app-server.ts";
-import { DenoKvStorage } from "https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/server-sdk/modules/storage-deno-kv/mod.ts";
-import { mountManagePage } from 'https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/server-sdk/modules/mount-manage-page.ts';
-import { mountWebManifest } from 'https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/server-sdk/modules/mount-webmanifest.ts';
-import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/server-sdk/core/single-site.ts";
+import { apiGroups, BundleConfig, entityKinds, BundleEntities } from 'https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/server-sdk/core/entities.ts';
+import { AppServer } from "https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/server-sdk/core/app-server.ts";
+import { DenoKvStorage } from "https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/server-sdk/modules/storage-deno-kv/mod.ts";
+import { mountManagePage } from 'https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/server-sdk/modules/mount-manage-page.ts';
+import { mountWebManifest } from 'https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/server-sdk/modules/mount-webmanifest.ts';
+import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/server-sdk/core/single-site.ts";
 // import { type MeteorAppBuildMeta } from '../bundle-config.ts';
-import { type UserEntity } from "https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/apis/login-server/definitions.ts";
-import { type ViteAppEntity } from "https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/apis/bundle/definitions.ts";
+import { type UserEntity } from "https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/apis/login-server/definitions.ts";
+import { type ViteAppEntity } from "https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/apis/bundle/definitions.ts";
 
-import { CollectionEntityApiMapping, DistInterface, SignedOutDistInterface, userNameMap } from 'https://uber.danopia.net/dist-app-deno/b3c1c6a560a2624cd89e288910b39d48e99d1806/hack/meteor-server/interface/registry.ts';
+import { CollectionEntityApiMapping, DistInterface, SignedOutDistInterface, userNameMap } from 'https://uber.danopia.net/dist-app-deno/0967dc3315705ebc4912c80987d2ed7a41421ff3/hack/meteor-server/interface/registry.ts';
 
 for (const kind of entityKinds) {
   console.log(kind.metadata)
