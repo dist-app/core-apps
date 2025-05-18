@@ -1,0 +1,62 @@
+---
+apiVersion: bundle.dist.app/v1alpha1
+kind: DocumentCollection
+metadata:
+  name: Projects
+spec:
+  apiVersion: project-planner.dist.app/v1alpha1
+  items:
+    kind: Project
+    plural: projects
+    singular: project
+    openAPIV3Schema:
+      type: object
+      required: [spec]
+      properties:
+        spec:
+          type: object
+          required:
+          - title
+          - createdAt
+          properties:
+            title:
+              type: string
+            description:
+              type: string
+            createdAt:
+              type: dateTime
+
+---
+apiVersion: bundle.dist.app/v1alpha1
+kind: DocumentCollection
+metadata:
+  name: Tasks
+spec:
+  apiVersion: project-planner.dist.app/v1alpha1
+  items:
+    kind: Task
+    plural: tasks
+    singular: task
+    openAPIV3Schema:
+      type: object
+      required: [spec]
+      properties:
+        spec:
+          type: object
+          required:
+          - projectId
+          - title
+          - createdAt
+          properties:
+            projectId:
+              type: string
+            parentTaskId:
+              type: string
+            title:
+              type: string
+            createdAt:
+              type: dateTime
+            startedAt:
+              type: dateTime
+            doneAt:
+              type: dateTime

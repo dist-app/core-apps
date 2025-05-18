@@ -1,1 +1,6 @@
 dist-entities.json
+node_modules
+
+install-state.gz
+.vite
+dist
