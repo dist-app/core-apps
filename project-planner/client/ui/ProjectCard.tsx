@@ -18,7 +18,7 @@ export function ProjectCard(props: {
         ))}
       </ul>
       <button onClick={() => server.callMethod('create-task', [props.project._id, prompt('Task name:')])}>
-        + Task
+        + Task!!
       </button>
     </div>
   );

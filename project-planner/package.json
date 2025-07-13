@@ -1,7 +1,7 @@
 {
-  "name": "entity-tree",
+  "name": "project-planner",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,14 +10,18 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "dependencies": {
+    "vite-tsconfig-paths": "^5.1.4"
+  },
   "devDependencies": {
-    "@cloudydeno/ejson": "jsr:^0.1.1",
-    "@dist-app/stdlib": "jsr:^0.1.6",
+    "@cloudydeno/ddp": "jsr:^0.1.2",
+    "@cloudydeno/ejson": "jsr:^0.1",
+    "@dist-app/stdlib": "jsr:^0.1",
     "@eslint/js": "^9",
-    "@opentelemetry/api": "^1.9.0",
-    "@opentelemetry/otlp-transformer": "^0.200.0",
-    "@opentelemetry/resources": "^2.0.0",
-    "@opentelemetry/sdk-trace-web": "^2.0.0",
+    "@opentelemetry/api": "^1",
+    "@opentelemetry/otlp-transformer": "^0.200",
+    "@opentelemetry/resources": "^2",
+    "@opentelemetry/sdk-trace-web": "^2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4",
@@ -25,6 +29,7 @@
     "eslint-plugin-react-hooks": "^5",
     "eslint-plugin-react-refresh": "^0",
     "globals": "^15",
+    "koa-connect": "^2.1.0",
     "react": "^19",
     "react-dom": "^19",
     "typescript": "~5.7",

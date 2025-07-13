@@ -212,7 +212,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudydeno/ejson@jsr:^0.1.1":
+"@cloudydeno/ddp@jsr:^0.1.2":
+  version: 0.1.2
+  resolution: "@cloudydeno/ddp@jsr:0.1.2::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fcloudydeno__ddp%2F0.1.2.tgz"
+  dependencies:
+    "@jsr/cloudydeno__ejson": "npm:^0.1"
+    "@jsr/cloudydeno__opentelemetry": "npm:^0.10"
+  checksum: 10c0/217bc5e4dbdcfc3714bde51f2c931a40473fef7b2b1dd14bffde7fc397b668b7f3949cb079025b09f6cde93c835bc0db76311e975f09c3851ac94b703a848e38
+  languageName: node
+  linkType: hard
+
+"@cloudydeno/ddp@npm:@jsr/cloudydeno__ddp@^0.1.2":
+  version: 0.1.2
+  resolution: "@jsr/cloudydeno__ddp@npm:0.1.2::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fcloudydeno__ddp%2F0.1.2.tgz"
+  dependencies:
+    "@jsr/cloudydeno__ejson": "npm:^0.1"
+    "@jsr/cloudydeno__opentelemetry": "npm:^0.10"
+  checksum: 10c0/217bc5e4dbdcfc3714bde51f2c931a40473fef7b2b1dd14bffde7fc397b668b7f3949cb079025b09f6cde93c835bc0db76311e975f09c3851ac94b703a848e38
+  languageName: node
+  linkType: hard
+
+"@cloudydeno/ejson@jsr:^0.1":
   version: 0.1.1
   resolution: "@cloudydeno/ejson@jsr:0.1.1::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fcloudydeno__ejson%2F0.1.1.tgz"
   dependencies:
@@ -221,7 +241,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudydeno/ejson@npm:@jsr/cloudydeno__ejson@^0.1.1, @jsr/cloudydeno__ejson@npm:0.1.1":
+"@cloudydeno/ejson@npm:@jsr/cloudydeno__ejson@^0.1, @jsr/cloudydeno__ejson@npm:0.1.1, @jsr/cloudydeno__ejson@npm:^0.1":
   version: 0.1.1
   resolution: "@jsr/cloudydeno__ejson@npm:0.1.1::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fcloudydeno__ejson%2F0.1.1.tgz"
   dependencies:
@@ -230,7 +250,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dist-app/stdlib@jsr:^0.1.6":
+"@dist-app/stdlib@jsr:^0.1":
   version: 0.1.6
   resolution: "@dist-app/stdlib@jsr:0.1.6::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fdist-app__stdlib%2F0.1.6.tgz"
   dependencies:
@@ -250,7 +270,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dist-app/stdlib@npm:@jsr/dist-app__stdlib@^0.1.6":
+"@dist-app/stdlib@npm:@jsr/dist-app__stdlib@^0.1":
   version: 0.1.6
   resolution: "@jsr/dist-app__stdlib@npm:0.1.6::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fdist-app__stdlib%2F0.1.6.tgz"
   dependencies:
@@ -670,6 +690,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jsr/cloudydeno__opentelemetry@npm:^0.10":
+  version: 0.10.3
+  resolution: "@jsr/cloudydeno__opentelemetry@npm:0.10.3::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fcloudydeno__opentelemetry%2F0.10.3.tgz"
+  dependencies:
+    "@jsr/cloudydeno__shimmer": "npm:1.2.1"
+  checksum: 10c0/b60277abc67a3898d2da31ffb750bafdff1ff0e0e7dd624f84374260b75b15a4d839ef85fc362d0405ba3d17273b3f674eed00373d97fc92aed23af0b37eac7f
+  languageName: node
+  linkType: hard
+
 "@jsr/cloudydeno__shimmer@npm:1.2.1":
   version: 1.2.1
   resolution: "@jsr/cloudydeno__shimmer@npm:1.2.1::__archiveUrl=https%3A%2F%2Fnpm.jsr.io%2F~%2F11%2F%40jsr%2Fcloudydeno__shimmer%2F1.2.1.tgz"
@@ -916,7 +945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/api@npm:^1.3.0, @opentelemetry/api@npm:^1.9.0":
+"@opentelemetry/api@npm:^1, @opentelemetry/api@npm:^1.3.0":
   version: 1.9.0
   resolution: "@opentelemetry/api@npm:1.9.0"
   checksum: 10c0/9aae2fe6e8a3a3eeb6c1fdef78e1939cf05a0f37f8a4fae4d6bf2e09eb1e06f966ece85805626e01ba5fab48072b94f19b835449e58b6d26720ee19a58298add
@@ -934,7 +963,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/otlp-transformer@npm:^0.200.0":
+"@opentelemetry/core@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@opentelemetry/core@npm:2.0.1"
+  dependencies:
+    "@opentelemetry/semantic-conventions": "npm:^1.29.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.0.0 <1.10.0"
+  checksum: 10c0/d587b1289559757d80da98039f9f57612f84f72ec608cd665dc467c7c6c5ce3a987dfcc2c63b521c7c86ce984a2552b3ead15a0dc458de1cf6bde5cdfe4ca9d8
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/otlp-transformer@npm:^0.200":
   version: 0.200.0
   resolution: "@opentelemetry/otlp-transformer@npm:0.200.0"
   dependencies:
@@ -951,7 +991,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/resources@npm:2.0.0, @opentelemetry/resources@npm:^2.0.0":
+"@opentelemetry/resources@npm:2.0.0":
   version: 2.0.0
   resolution: "@opentelemetry/resources@npm:2.0.0"
   dependencies:
@@ -960,6 +1000,18 @@ __metadata:
   peerDependencies:
     "@opentelemetry/api": ">=1.3.0 <1.10.0"
   checksum: 10c0/2f331ff8268ef7168e8f24312fd7505900693c0ea302f6025937e94c157b8173ee54f5d5a737c06b956da721aa63443ac520f530cade880ef3cd40a2a25c702c
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/resources@npm:2.0.1, @opentelemetry/resources@npm:^2":
+  version: 2.0.1
+  resolution: "@opentelemetry/resources@npm:2.0.1"
+  dependencies:
+    "@opentelemetry/core": "npm:2.0.1"
+    "@opentelemetry/semantic-conventions": "npm:^1.29.0"
+  peerDependencies:
+    "@opentelemetry/api": ">=1.3.0 <1.10.0"
+  checksum: 10c0/96532b7553b26607a7a892d72f6b03ad12bd542dc23c95135a8ae40362da9c883c21a4cff3d2296d9e0e9bd899a5977e325ed52d83142621a8ffe81d08d99341
   languageName: node
   linkType: hard
 
@@ -1001,16 +1053,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/sdk-trace-web@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@opentelemetry/sdk-trace-web@npm:2.0.0"
+"@opentelemetry/sdk-trace-base@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@opentelemetry/sdk-trace-base@npm:2.0.1"
   dependencies:
-    "@opentelemetry/core": "npm:2.0.0"
-    "@opentelemetry/sdk-trace-base": "npm:2.0.0"
+    "@opentelemetry/core": "npm:2.0.1"
+    "@opentelemetry/resources": "npm:2.0.1"
     "@opentelemetry/semantic-conventions": "npm:^1.29.0"
   peerDependencies:
+    "@opentelemetry/api": ">=1.3.0 <1.10.0"
+  checksum: 10c0/4e3c733296012b758d007e9c0d8a5b175edbe9a680c73ec75303476e7982b73ad4209f1a2791c1a94c428e5a53eba6c2a72faa430c70336005aa58744d6cb37b
+  languageName: node
+  linkType: hard
+
+"@opentelemetry/sdk-trace-web@npm:^2":
+  version: 2.0.1
+  resolution: "@opentelemetry/sdk-trace-web@npm:2.0.1"
+  dependencies:
+    "@opentelemetry/core": "npm:2.0.1"
+    "@opentelemetry/sdk-trace-base": "npm:2.0.1"
+  peerDependencies:
     "@opentelemetry/api": ">=1.0.0 <1.10.0"
-  checksum: 10c0/72af264a404a8cc6ba35235434f519bcb8825e2e9163e0ebe554074cbe51f543fbc4c5cc55b21dce221647af0ee6a0acab0442dc3d6ca1c32ff43f347ad95ad8
+  checksum: 10c0/48821b91430e24378b0b5b2632e78efdd018a3f840462a6aeba6ce318a6480bad2f623cc7f7f625a9266028ad44b78eb8456181778de6cb18725f26c44e2729b
   languageName: node
   linkType: hard
 
@@ -1854,6 +1918,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"debug@npm:^4.1.1":
+  version: 4.4.1
+  resolution: "debug@npm:4.4.1"
+  dependencies:
+    ms: "npm:^2.1.3"
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 10c0/d2b44bc1afd912b49bb7ebb0d50a860dc93a4dd7d946e8de94abc957bb63726b7dd5aa48c18c2386c379ec024c46692e15ed3ed97d481729f929201e671fcd55
+  languageName: node
+  linkType: hard
+
 "deep-is@npm:^0.1.3":
   version: 0.1.4
   resolution: "deep-is@npm:0.1.4"
@@ -1929,32 +2005,6 @@ __metadata:
   checksum: 10c0/36d938712ff00fe1f4bac88b43bcffb5930c1efa57bbcdca9d67e1d9d6c57cfb1200fb01efe0f3109b2ce99b231f90779532814a81370a1bd3274a0f58585039
   languageName: node
   linkType: hard
-
-"entity-tree@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "entity-tree@workspace:."
-  dependencies:
-    "@cloudydeno/ejson": "jsr:^0.1.1"
-    "@dist-app/stdlib": "jsr:^0.1.6"
-    "@eslint/js": "npm:^9"
-    "@opentelemetry/api": "npm:^1.9.0"
-    "@opentelemetry/otlp-transformer": "npm:^0.200.0"
-    "@opentelemetry/resources": "npm:^2.0.0"
-    "@opentelemetry/sdk-trace-web": "npm:^2.0.0"
-    "@types/react": "npm:^19"
-    "@types/react-dom": "npm:^19"
-    "@vitejs/plugin-react": "npm:^4"
-    eslint: "npm:^9"
-    eslint-plugin-react-hooks: "npm:^5"
-    eslint-plugin-react-refresh: "npm:^0"
-    globals: "npm:^15"
-    react: "npm:^19"
-    react-dom: "npm:^19"
-    typescript: "npm:~5.7"
-    typescript-eslint: "npm:^8"
-    vite: "npm:^6"
-  languageName: unknown
-  linkType: soft
 
 "env-paths@npm:^2.2.0":
   version: 2.2.1
@@ -2574,6 +2624,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globrex@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "globrex@npm:0.1.2"
+  checksum: 10c0/a54c029520cf58bda1d8884f72bd49b4cd74e977883268d931fd83bcbd1a9eb96d57c7dbd4ad80148fb9247467ebfb9b215630b2ed7563b2a8de02e1ff7f89d1
+  languageName: node
+  linkType: hard
+
 "gopd@npm:^1.2.0":
   version: 1.2.0
   resolution: "gopd@npm:1.2.0"
@@ -2856,6 +2913,13 @@ __metadata:
   dependencies:
     json-buffer: "npm:3.0.1"
   checksum: 10c0/aa52f3c5e18e16bb6324876bb8b59dd02acf782a4b789c7b2ae21107fab95fab3890ed448d4f8dba80ce05391eeac4bfabb4f02a20221342982f806fa2cf271e
+  languageName: node
+  linkType: hard
+
+"koa-connect@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "koa-connect@npm:2.1.0"
+  checksum: 10c0/ddafb5d77817aef273d53e8a4f9bdee368980f233b476cd4c78f64ed29f2829e50a445bedbb51586deced2cfb39b8f881a94e9e8a067a4988618a8c37bc6eb0b
   languageName: node
   linkType: hard
 
@@ -3329,6 +3393,35 @@ __metadata:
   checksum: 10c0/bbe5edb944b0ad63387a1d5b1911ae93e05ce8d0f60de1035b218cdcceedfe39dbd2c697853355b70f1a090f8f58fe90da487c85216bf9671f9499d1a897e9e3
   languageName: node
   linkType: hard
+
+"project-planner@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "project-planner@workspace:."
+  dependencies:
+    "@cloudydeno/ddp": "jsr:^0.1.2"
+    "@cloudydeno/ejson": "jsr:^0.1"
+    "@dist-app/stdlib": "jsr:^0.1"
+    "@eslint/js": "npm:^9"
+    "@opentelemetry/api": "npm:^1"
+    "@opentelemetry/otlp-transformer": "npm:^0.200"
+    "@opentelemetry/resources": "npm:^2"
+    "@opentelemetry/sdk-trace-web": "npm:^2"
+    "@types/react": "npm:^19"
+    "@types/react-dom": "npm:^19"
+    "@vitejs/plugin-react": "npm:^4"
+    eslint: "npm:^9"
+    eslint-plugin-react-hooks: "npm:^5"
+    eslint-plugin-react-refresh: "npm:^0"
+    globals: "npm:^15"
+    koa-connect: "npm:^2.1.0"
+    react: "npm:^19"
+    react-dom: "npm:^19"
+    typescript: "npm:~5.7"
+    typescript-eslint: "npm:^8"
+    vite: "npm:^6"
+    vite-tsconfig-paths: "npm:^5.1.4"
+  languageName: unknown
+  linkType: soft
 
 "promise-retry@npm:^2.0.1":
   version: 2.0.1
@@ -3882,6 +3975,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tsconfck@npm:^3.0.3":
+  version: 3.1.6
+  resolution: "tsconfck@npm:3.1.6"
+  peerDependencies:
+    typescript: ^5.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  bin:
+    tsconfck: bin/tsconfck.js
+  checksum: 10c0/269c3c513540be44844117bb9b9258fe6f8aeab026d32aeebf458d5299125f330711429dbb556dbf125a0bc25f4a81e6c24ac96de2740badd295c3fb400f66c4
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^2.8.1":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
@@ -4002,6 +4109,22 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: 10c0/f15d588d79f3675135ba783c91a4083dcd290a2a5be9fcb6514220a1634e23df116847b1cc51f66bfb0644cf9353b2abb7815ae499bab06e46dd33c1a6bf1f4f
+  languageName: node
+  linkType: hard
+
+"vite-tsconfig-paths@npm:^5.1.4":
+  version: 5.1.4
+  resolution: "vite-tsconfig-paths@npm:5.1.4"
+  dependencies:
+    debug: "npm:^4.1.1"
+    globrex: "npm:^0.1.2"
+    tsconfck: "npm:^3.0.3"
+  peerDependencies:
+    vite: "*"
+  peerDependenciesMeta:
+    vite:
+      optional: true
+  checksum: 10c0/6228f23155ea25d92b1e1702284cf8dc52ad3c683c5ca691edd5a4c82d2913e7326d00708cef1cbfde9bb226261df0e0a12e03ef1d43b6a92d8f02b483ef37e3
   languageName: node
   linkType: hard
 

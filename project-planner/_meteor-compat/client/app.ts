@@ -1,4 +1,5 @@
-import { DDPClient } from "./ddp/ddp-client.ts";
+import { DDP } from '@cloudydeno/ddp/client';
+// import { DDPClient } from "./ddp/ddp-client.ts";
 // import { DDPClient } from "@dist-app/stdlib/ddp/client";
 
 
@@ -9,5 +10,5 @@ import { DDPClient } from "./ddp/ddp-client.ts";
 //   reconnectInterval: 5000,
 // };
 // console.log('module running')
-export const server = await DDPClient.connectToUrl('ws'+new URL('/websocket', window.location.href).toString().slice(4), 'raw');
+export const server = DDP.connect(window.location.href);
 // server.subscribe('meteor_autoupdate_clientVersions', []);

@@ -2,7 +2,7 @@
 // Start up the app server
 // import "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/run.ts";
 
-import { DdpInterface, DdpSocket } from "jsr:@dist-app/stdlib@0.1.5/ddp/server";
+// import { DdpInterface, DdpSocket } from "jsr:@dist-app/stdlib@0.1.5/ddp/server";
 import { CookieAuthnMethod } from "jsr:@dist-app/stdlib@0.1.5/auth/authn-methods/cookie";
 import { type EntityEngine } from "jsr:@dist-app/stdlib@0.1.5/engine/types";
 import { EntityEngineImpl } from "jsr:@dist-app/stdlib@0.1.5/engine/engine";
@@ -19,7 +19,9 @@ import { setupSingleSite } from "https://uber.danopia.net/dist-app-deno/8ca42f35
 import { type UserEntity } from "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/login-server/definitions.ts";
 import { type ViteAppEntity } from "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/bundle/definitions.ts";
 
-import { CollectionEntityApiMapping, DistInterface, SignedOutDistInterface, userNameMap } from 'https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/interface/registry.ts';
+import { CollectionEntityApiMapping, DistInterface, SignedOutDistInterface, userNameMap } from '../../../../danopia/dist-app-deno/hack/meteor-server/interface/registry.ts';
+import { DdpSocketSession } from "jsr:@cloudydeno/ddp@0.1.2/server";
+// import { CollectionEntityApiMapping, DistInterface, SignedOutDistInterface, userNameMap } from 'https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/interface/registry.ts';
 
 for (const kind of entityKinds) {
   console.log(kind.metadata)
@@ -83,16 +85,16 @@ const server = await setupSingleSite((app, siteBaseUrl) => {
 
     if (!user) {
       const { socket, response } = Deno.upgradeWebSocket(req);
-      const ddp = new DdpSocket(socket, SignedOutDistInterface, 'raw');
-      ddp.closePromise.then(() => {}, () => {});
+      const ddp = new DdpSocketSession(socket, SignedOutDistInterface, 'raw');
+      ddp.closePromise?.then(() => {}, () => {});
       return response;
       // return new Response('not authed', {status: 404});
     }
 
     const { socket, response } = Deno.upgradeWebSocket(req);
-    const ddp = new DdpSocket(socket, DistInterface, 'raw');
+    const ddp = new DdpSocketSession(socket, DistInterface, 'raw');
     userNameMap.set(ddp, await getUserEngine(user));
-    ddp.closePromise.then(() => {}, () => {});
+    ddp.closePromise?.then(() => {}, () => {});
     return response;
   });
 

@@ -18,7 +18,7 @@ export default defineConfig({
         target: 'ws://localhost:8000/',
         ws: true,
       },
-    },middlewareMode: true,
+    },
   },
   clearScreen: false,
   build: {

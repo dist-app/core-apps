@@ -1,8 +1,8 @@
 import { DependencyList, useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
 
 import { server } from '../app.ts'
-import { type DdpSubscription } from '../ddp/ddp-client.ts';
-import { Cursor, ObserverHandle } from '../ddp/types.ts';
+import { DdpSubscription } from '@cloudydeno/ddp/client';
+import { Cursor, ObserverHandle } from '@cloudydeno/ddp/livedata/types.ts';
 
 export function useSubscribe(name: string, args: string[] = []) {
   const [isReady, setIsReady] = useState(false);
