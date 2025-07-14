@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - .github/workflows/build-project-planner.yaml
-      - project-planner
+      - project-planner/**
 
 jobs:
 

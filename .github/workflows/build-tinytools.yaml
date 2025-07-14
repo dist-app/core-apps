@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - .github/workflows/build-tinytools.yaml
-      - tinytools
+      - tinytools/**
 
 jobs:
 
