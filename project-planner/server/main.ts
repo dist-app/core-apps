@@ -34,5 +34,5 @@ Meteor.methods({
 });
 
 // Start up the app server
-// import "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/run.ts";
+// import "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/hack/meteor-server/run.ts";
 // import './serve.ts';

@@ -19,7 +19,11 @@ metadata:
   name: backend
 spec:
   attachKv: true
-  entryPointUrl: server/main.ts
+  # entryPointUrl: server/main.ts
+  entryPointUrl: _meteor-compat/server/entrypoint.ts
+  # entryPointText:
+  #   import "@cosmosaur/server/entrypoint";
+  #   import "server/main.ts";
   env:
     PORT: 8000
   permissions:
@@ -45,11 +49,11 @@ metadata:
   name: main
 spec:
   config: vite.config.ts
-  # spaPathPatterns:
-  # - /
-  # - /tasks
-  # - /chores
-  # - /chores/*
+  spaPathPatterns:
+  - /
+  - /tasks
+  - /chores
+  - /chores/*
 
 # ---
 # apiVersion: bundle.dist.app/v1alpha1

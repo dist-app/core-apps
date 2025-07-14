@@ -29,7 +29,7 @@
     "eslint-plugin-react-hooks": "^5",
     "eslint-plugin-react-refresh": "^0",
     "globals": "^15",
-    "koa-connect": "^2.1.0",
+    "koa-connect": "^2",
     "react": "^19",
     "react-dom": "^19",
     "typescript": "~5.7",
