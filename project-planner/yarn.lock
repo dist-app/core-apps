@@ -2916,7 +2916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"koa-connect@npm:^2.1.0":
+"koa-connect@npm:^2":
   version: 2.1.0
   resolution: "koa-connect@npm:2.1.0"
   checksum: 10c0/ddafb5d77817aef273d53e8a4f9bdee368980f233b476cd4c78f64ed29f2829e50a445bedbb51586deced2cfb39b8f881a94e9e8a067a4988618a8c37bc6eb0b
@@ -3413,7 +3413,7 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^5"
     eslint-plugin-react-refresh: "npm:^0"
     globals: "npm:^15"
-    koa-connect: "npm:^2.1.0"
+    koa-connect: "npm:^2"
     react: "npm:^19"
     react-dom: "npm:^19"
     typescript: "npm:~5.7"

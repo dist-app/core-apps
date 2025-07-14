@@ -36,5 +36,5 @@
     "typescript-eslint": "^8",
     "vite": "^6"
   },
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.2"
 }
