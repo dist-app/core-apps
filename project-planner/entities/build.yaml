@@ -5,11 +5,11 @@ metadata:
   name: default
 spec:
   appName: Project Planner
-  appDesc: Habit tracker focused on how many days it's been since you did things
+  appDesc: Lightweight project-scoped task tracking
   appIcon:
     type: glyph
     glyph:
-      text: '📑'
+      text: '📋'
       backgroundColor: '#198856'
 
 ---
@@ -20,7 +20,7 @@ metadata:
 spec:
   attachKv: true
   # entryPointUrl: server/main.ts
-  entryPointUrl: _meteor-compat/server/entrypoint.ts
+  entryPointUrl: _meteor-compat/server/entrypoint-${TargetType}.ts
   # entryPointText:
   #   import "@cosmosaur/server/entrypoint";
   #   import "server/main.ts";
