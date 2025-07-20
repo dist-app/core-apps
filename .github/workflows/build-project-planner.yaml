@@ -59,7 +59,6 @@ jobs:
       run: dist-bundle build
       working-directory: project-planner
       env:
-        DENO_NO_PACKAGE_JSON: '1' 
         artifact-labels: ${{ steps.meta.outputs.labels }}
 
     - name: Push artifact
