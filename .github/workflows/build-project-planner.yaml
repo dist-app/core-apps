@@ -19,7 +19,7 @@ jobs:
     - name: Use Deno stable
       uses: denoland/setup-deno@v2
       with:
-        deno-version: v2.4
+        deno-version: v2.3.3
     - name: Cache https://
       uses: actions/cache@v4
       with:
