@@ -162,7 +162,10 @@ export function attachViteAssetRoutes(app: AppServer, viteApp: ViteAppEntity, re
     app.mountPathPrefixHandler('/assets', requireRoles, async (_req, match) => {
       const assetName = match.pathname.groups?.['rest'];
       if (!assetName) return new Response('', { status: 404 });
-      const assetResp = await fetch(new URL(`assets/${assetName}`, `${blobUrl}/`));
+      const assetUrl = new URL(`assets/${assetName}`, `${blobUrl}/`);
+      console.log('hi', assetUrl);
+      const assetResp = await fetch(assetUrl);
+      console.log('ok', assetResp.status, assetResp.headers);
       if (!assetResp.ok) {
         return new Response('', { status: 500 });
       }
