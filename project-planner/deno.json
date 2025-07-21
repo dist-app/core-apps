@@ -1,0 +1,7 @@
+{"imports": {
+  "dist-app-deno/": "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/",
+  "@cloudydeno/opentelemetry": "jsr:@cloudydeno/opentelemetry@^0.10.3",
+  "meteor/meteor": "./_meteor-compat/server/apis/meteor.ts",
+  "meteor/mongo": "./_meteor-compat/server/apis/mongo.ts",
+  "meteor/check": "./_meteor-compat/server/apis/check.ts"
+}}

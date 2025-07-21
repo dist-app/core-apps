@@ -1,0 +1,64 @@
+---
+apiVersion: bundle.dist.app/v1alpha1
+kind: BundleConfig
+metadata:
+  name: default
+spec:
+  appName: Project Planner
+  appDesc: Lightweight project-scoped task tracking
+  appIcon:
+    type: glyph
+    glyph:
+      text: '📋'
+      backgroundColor: '#198856'
+
+---
+apiVersion: bundle.dist.app/v1alpha1
+kind: DenoServer
+metadata:
+  name: backend
+spec:
+  attachKv: true
+  # entryPointUrl: server/main.ts
+  entryPointUrl: _meteor-compat/server/entrypoint-${TargetType}.ts
+  # entryPointText:
+  #   import "@cosmosaur/server/entrypoint";
+  #   import "server/main.ts";
+  env:
+    PORT: '8000'
+  permissions:
+    import:
+    - jsr.io
+    - uber.danopia.net
+    - esm.sh
+    - deno.land
+    - cdn.esm.sh
+    env: true
+    read: true
+    sys: true
+    net: true
+  unstable:
+  - broadcast-channel
+  - cron
+  - kv
+
+---
+apiVersion: bundle.dist.app/v1alpha1
+kind: ViteApp
+metadata:
+  name: main
+spec:
+  config: vite.config.ts
+  spaPathPatterns:
+  - /
+  - /tasks
+  - /chores
+  - /chores/*
+
+# ---
+# apiVersion: bundle.dist.app/v1alpha1
+# kind: CookieAuthn
+# metadata:
+#   name: main
+# spec:
+#   sessionLengthDays: 14

@@ -1,0 +1,191 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@cloudydeno/ddp@0.1.2": "0.1.2",
+    "jsr:@cloudydeno/ejson@0.1": "0.1.1",
+    "jsr:@cloudydeno/ejson@0.1.1": "0.1.1",
+    "jsr:@cloudydeno/opentelemetry@0.10": "0.10.2",
+    "jsr:@cloudydeno/opentelemetry@0.10.1": "0.10.1",
+    "jsr:@cloudydeno/opentelemetry@0.10.2": "0.10.2",
+    "jsr:@cloudydeno/shimmer@1.2.1": "1.2.1",
+    "jsr:@cloudydeno/stream-observables@1.4.1": "1.4.1",
+    "jsr:@david/code-block-writer@13.0.3": "13.0.3",
+    "jsr:@dist-app/stdlib@0.1.5": "0.1.5",
+    "jsr:@hexagon/proper-tags@2.0.2": "2.0.2",
+    "jsr:@hono/hono@4.7.7": "4.7.7",
+    "jsr:@std/encoding@0.224.0": "0.224.0",
+    "jsr:@std/encoding@1.0.10": "1.0.10",
+    "jsr:@std/encoding@1.0.9": "1.0.9",
+    "jsr:@std/http@1.0.14": "1.0.14",
+    "jsr:@std/yaml@1.0.6": "1.0.6",
+    "jsr:@zaubrik/djwt@3.0.2": "3.0.2"
+  },
+  "jsr": {
+    "@cloudydeno/ddp@0.1.2": {
+      "integrity": "f7beb8eaa5d8f445b94137b4fe592abadf1290729622bda9992e73b6aab39946",
+      "dependencies": [
+        "jsr:@cloudydeno/ejson@0.1",
+        "jsr:@cloudydeno/opentelemetry@0.10"
+      ]
+    },
+    "@cloudydeno/ejson@0.1.1": {
+      "integrity": "36d660b2012726f96f512ecd5c16cc85088351d558f99ca6f79472e114580afc",
+      "dependencies": [
+        "jsr:@std/encoding@1.0.9"
+      ]
+    },
+    "@cloudydeno/opentelemetry@0.10.1": {
+      "integrity": "558a9093bccf9d715a91ce1c840936abb69872ae1da4673f8c345e274a83ec95"
+    },
+    "@cloudydeno/opentelemetry@0.10.2": {
+      "integrity": "cb8cad66f43d8b55b5ca685e42918b34eb7c3307b5b8e2e80a0ae3c4cfbbc771",
+      "dependencies": [
+        "jsr:@cloudydeno/shimmer"
+      ]
+    },
+    "@cloudydeno/shimmer@1.2.1": {
+      "integrity": "6d7cf8ba798532a9beb963937977e28e26dbd4e020b38f828a411aaacb34c3b2"
+    },
+    "@cloudydeno/stream-observables@1.4.1": {
+      "integrity": "555aa3d786fcfd066d096fc943ea47afc688618e95146e615705e981008f57c0"
+    },
+    "@david/code-block-writer@13.0.3": {
+      "integrity": "f98c77d320f5957899a61bfb7a9bead7c6d83ad1515daee92dbacc861e13bb7f"
+    },
+    "@dist-app/stdlib@0.1.5": {
+      "integrity": "bbe681a9491d3fd8b7a1066f378683365ebcaa4df515bc27c98f84911c089886",
+      "dependencies": [
+        "jsr:@cloudydeno/ejson@0.1.1",
+        "jsr:@cloudydeno/opentelemetry@0.10.1",
+        "jsr:@hono/hono",
+        "jsr:@std/encoding@1.0.10",
+        "jsr:@std/http",
+        "jsr:@zaubrik/djwt"
+      ]
+    },
+    "@hexagon/proper-tags@2.0.2": {
+      "integrity": "c33ece3140572f4355098380765361ea2f4b596a9ad24467d566f541888ead90"
+    },
+    "@hono/hono@4.7.7": {
+      "integrity": "74ea9985cb405fada079a922538f6baa06fa1ee150ce409c5bdae2c89ac05cba"
+    },
+    "@std/encoding@0.224.0": {
+      "integrity": "efb6dca97d3e9c31392bd5c8cfd9f9fc9decf5a1f4d1f78af7900a493bcf89b5"
+    },
+    "@std/encoding@1.0.9": {
+      "integrity": "025b8f18eb1749bc30d1353bf48b77d1eb5e35610220fa226f5a046b9240c5d7"
+    },
+    "@std/encoding@1.0.10": {
+      "integrity": "8783c6384a2d13abd5e9e87a7ae0520a30e9f56aeeaa3bdf910a3eaaf5c811a1"
+    },
+    "@std/http@1.0.14": {
+      "integrity": "bfc4329d975dff2abd8170e83e37deb454fbc678fec3fdd2ef5b03d92768a4ef"
+    },
+    "@std/yaml@1.0.6": {
+      "integrity": "c9a5a914e1d51c46756cb10e356710035cfa905e713c90d3b711413fd3aead27"
+    },
+    "@zaubrik/djwt@3.0.2": {
+      "integrity": "8070adaa49cd9e5d2b8ae82fd461132c966ef2f8ff8378db4a4da8df4f17c664",
+      "dependencies": [
+        "jsr:@std/encoding@0.224.0"
+      ]
+    }
+  },
+  "remote": {
+    "https://esm.sh/sift@17.1.3": "46f68423bb71122db87c0f92566a98440955ab095ce5a50daa2b68354ba249b8",
+    "https://esm.sh/sift@17.1.3/denonext/sift.mjs": "384f268802805cf652409eb8753afd0a5230fcdd1fe18ec53d1eba07f0487593",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/apis/bundle/entities.ts": "5e331ae1436f49bcc1711cd83b2b00ac311fa433ef23fe02703032d36a31da7c",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/apis/login-server/definitions.ts": "20419b503e94778d1271f570cd40caa1bc6b1a6d65d50af698f660faed022d11",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/apis/login-server/entities.ts": "1e8d2d9c1425fe5e8f9be02f84ebd856d04780d3f7b5fe84b488243f63f1efd7",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/apis/manifest/definitions.ts": "91433df1f077f048424f75575ea0d544603c4298ae8f2bf7abcc1df80fe5f431",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/apis/manifest/entities.ts": "e82015a930ef99b75051fa25e2d3983feaca9eddc5943196420cfa48c43133f5",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/apis/manifest/icon.ts": "f8515f60a40cd13e42b913fb5f1d7c597bb0438eb4856f695a5bb4059c7febb6",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/apis/manifest/implementation.ts": "4fee987d139eae665c6d10bd0e88f3f8d2919fcda94477946752e69d52307139",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/core/ServerFramework.ts": "1469fb515ebd098a746d695e1d50ea85c9ead5d5f444c500a5253a839376bb09",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/core/app-server.ts": "78c4b4ac902ae3e14b09c820ae91bb302fadbc7b86d623efc2863adefe2c7c8a",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/core/entities.ts": "6b44d3f8503c11fc610f57c09f4825c3b2f9f023b99a9e9e722834448095460f",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/core/interfaces.ts": "e177a08ce00a5969ea1df205cb9c7af51b4ad3b13d001b87b28e705dc0570554",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/core/single-site.ts": "bf9d79ab7b9176aedf01eabc6f7531acd61597ff6da2c7b65acb0b8a1611e630",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/modules/mount-manage-page.ts": "b8378019939a2f6fbad5095a2dd6a6324abb1b4287056f7b88e49247cfea4d90",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/modules/mount-webmanifest.ts": "8a6899d9089a15ba056256e308a6be200e2580c7c1675ff4636f628cf0177b30",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/modules/storage-deno-kv/mod.ts": "7be748c62ceb4545c52a7c0e35685f122eb2777e0a650f6249cb45b74b734e4f",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/modules/storage-deno-kv/nonrealtime.ts": "0c73998b048208d6725c1c855ade052afe6adca62890cc72e8d453d935b4ae5f",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/server-sdk/modules/storage-deno-kv/realtime.ts": "ada4f03430bbeee25f554a09be48264987b8f7b1fe9f8f1f6de9e4505336f6e1",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/webapp/server/compile-iframe-src.ts": "742f8e6e23c71f58f57acac5c4c40e094c3989d43105cb20a8f035f90766d307",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/webapp/server/serve-runtime-dist.ts": "a0057cf1a7bb28a445657d3f1cff6527de65047bde3734b1f36f3f703f6c2f1f",
+    "https://uber.danopia.net/dist-app-deno/167f59407fec498bda47ee47d1b0a77031a2601f/webapp/server/serve-trusted-app.ts": "70708dce2a9bf44e47c223e867e1ad6c7081bed033a697ac9145a390dc1224ef",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/bundle/definitions.ts": "5b943bc95dda23065a16908d40359fee9d57dbaf18d6b9c868c1bda25390ccca",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/bundle/entities.ts": "5e331ae1436f49bcc1711cd83b2b00ac311fa433ef23fe02703032d36a31da7c",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/login-server/definitions.ts": "20419b503e94778d1271f570cd40caa1bc6b1a6d65d50af698f660faed022d11",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/login-server/entities.ts": "1e8d2d9c1425fe5e8f9be02f84ebd856d04780d3f7b5fe84b488243f63f1efd7",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/manifest/definitions.ts": "91433df1f077f048424f75575ea0d544603c4298ae8f2bf7abcc1df80fe5f431",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/manifest/entities.ts": "e82015a930ef99b75051fa25e2d3983feaca9eddc5943196420cfa48c43133f5",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/manifest/icon.ts": "f8515f60a40cd13e42b913fb5f1d7c597bb0438eb4856f695a5bb4059c7febb6",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/apis/manifest/implementation.ts": "4fee987d139eae665c6d10bd0e88f3f8d2919fcda94477946752e69d52307139",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/interface/meteor-check.ts": "d9048176062b3b190ded173beccdbf214dafb8417ac4428e1cea0c83de424d68",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/interface/meteor-meteor.ts": "8070bfd0401d7805869c805d52adbf69176fb5e83b128007f23a90377b8fec43",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/interface/meteor-mongo.ts": "e93da6fe284f313f360d189707f2c90228b83167da4d157854bdb00ce3e1ea33",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/hack/meteor-server/interface/registry.ts": "1ae5f822124e875ab80490e9bd4e22d548df8da61153c247bdc94ca08997639f",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/core/ServerFramework.ts": "1a80ec7933f2e5d00d205f12dfe54c3e76fef9492d89463c1f112dda63694ad1",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/core/app-server.ts": "78c4b4ac902ae3e14b09c820ae91bb302fadbc7b86d623efc2863adefe2c7c8a",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/core/entities.ts": "6b44d3f8503c11fc610f57c09f4825c3b2f9f023b99a9e9e722834448095460f",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/core/interfaces.ts": "e177a08ce00a5969ea1df205cb9c7af51b4ad3b13d001b87b28e705dc0570554",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/core/single-site.ts": "bf9d79ab7b9176aedf01eabc6f7531acd61597ff6da2c7b65acb0b8a1611e630",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/modules/mount-manage-page.ts": "b8378019939a2f6fbad5095a2dd6a6324abb1b4287056f7b88e49247cfea4d90",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/modules/mount-webmanifest.ts": "8a6899d9089a15ba056256e308a6be200e2580c7c1675ff4636f628cf0177b30",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/modules/storage-deno-kv/mod.ts": "7be748c62ceb4545c52a7c0e35685f122eb2777e0a650f6249cb45b74b734e4f",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/modules/storage-deno-kv/nonrealtime.ts": "0c73998b048208d6725c1c855ade052afe6adca62890cc72e8d453d935b4ae5f",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/server-sdk/modules/storage-deno-kv/realtime.ts": "ada4f03430bbeee25f554a09be48264987b8f7b1fe9f8f1f6de9e4505336f6e1",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/webapp/server/compile-iframe-src.ts": "742f8e6e23c71f58f57acac5c4c40e094c3989d43105cb20a8f035f90766d307",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/webapp/server/serve-runtime-dist.ts": "a0057cf1a7bb28a445657d3f1cff6527de65047bde3734b1f36f3f703f6c2f1f",
+    "https://uber.danopia.net/dist-app-deno/8ca42f351bb294e3e45272a1310251a269d59a18/webapp/server/serve-trusted-app.ts": "70708dce2a9bf44e47c223e867e1ad6c7081bed033a697ac9145a390dc1224ef",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/apis/bundle/entities.ts": "5e331ae1436f49bcc1711cd83b2b00ac311fa433ef23fe02703032d36a31da7c",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/apis/login-server/definitions.ts": "20419b503e94778d1271f570cd40caa1bc6b1a6d65d50af698f660faed022d11",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/apis/login-server/entities.ts": "1e8d2d9c1425fe5e8f9be02f84ebd856d04780d3f7b5fe84b488243f63f1efd7",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/apis/manifest/definitions.ts": "91433df1f077f048424f75575ea0d544603c4298ae8f2bf7abcc1df80fe5f431",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/apis/manifest/entities.ts": "e82015a930ef99b75051fa25e2d3983feaca9eddc5943196420cfa48c43133f5",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/apis/manifest/icon.ts": "f8515f60a40cd13e42b913fb5f1d7c597bb0438eb4856f695a5bb4059c7febb6",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/apis/manifest/implementation.ts": "4fee987d139eae665c6d10bd0e88f3f8d2919fcda94477946752e69d52307139",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/core/ServerFramework.ts": "1469fb515ebd098a746d695e1d50ea85c9ead5d5f444c500a5253a839376bb09",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/core/app-server.ts": "78c4b4ac902ae3e14b09c820ae91bb302fadbc7b86d623efc2863adefe2c7c8a",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/core/entities.ts": "6b44d3f8503c11fc610f57c09f4825c3b2f9f023b99a9e9e722834448095460f",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/core/interfaces.ts": "e177a08ce00a5969ea1df205cb9c7af51b4ad3b13d001b87b28e705dc0570554",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/core/single-site.ts": "bf9d79ab7b9176aedf01eabc6f7531acd61597ff6da2c7b65acb0b8a1611e630",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/modules/mount-manage-page.ts": "b8378019939a2f6fbad5095a2dd6a6324abb1b4287056f7b88e49247cfea4d90",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/modules/mount-webmanifest.ts": "8a6899d9089a15ba056256e308a6be200e2580c7c1675ff4636f628cf0177b30",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/modules/storage-deno-kv/mod.ts": "7be748c62ceb4545c52a7c0e35685f122eb2777e0a650f6249cb45b74b734e4f",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/modules/storage-deno-kv/nonrealtime.ts": "0c73998b048208d6725c1c855ade052afe6adca62890cc72e8d453d935b4ae5f",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/server-sdk/modules/storage-deno-kv/realtime.ts": "ada4f03430bbeee25f554a09be48264987b8f7b1fe9f8f1f6de9e4505336f6e1",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/webapp/server/compile-iframe-src.ts": "742f8e6e23c71f58f57acac5c4c40e094c3989d43105cb20a8f035f90766d307",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/webapp/server/serve-runtime-dist.ts": "a0057cf1a7bb28a445657d3f1cff6527de65047bde3734b1f36f3f703f6c2f1f",
+    "https://uber.danopia.net/dist-app-deno/affe913e555847a6c93dc173808fbaf19ae9e90c/webapp/server/serve-trusted-app.ts": "70708dce2a9bf44e47c223e867e1ad6c7081bed033a697ac9145a390dc1224ef"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@cloudydeno/opentelemetry@~0.10.3"
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:@eslint/js@9",
+        "npm:@opentelemetry/api@1",
+        "npm:@opentelemetry/otlp-transformer@0.200",
+        "npm:@opentelemetry/resources@2",
+        "npm:@opentelemetry/sdk-trace-web@2",
+        "npm:@types/react-dom@19",
+        "npm:@types/react@19",
+        "npm:@vitejs/plugin-react@4",
+        "npm:eslint-plugin-react-hooks@5",
+        "npm:eslint-plugin-react-refresh@0",
+        "npm:eslint@9",
+        "npm:globals@15",
+        "npm:koa-connect@2",
+        "npm:react-dom@19",
+        "npm:react@19",
+        "npm:typescript-eslint@8",
+        "npm:typescript@5.7",
+        "npm:vite-tsconfig-paths@^5.1.4",
+        "npm:vite@6"
+      ]
+    }
+  }
+}
