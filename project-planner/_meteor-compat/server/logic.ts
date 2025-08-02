@@ -165,6 +165,7 @@ export function attachViteAssetRoutes(app: AppServer, viteApp: ViteAppEntity, re
       const assetUrl = new URL(`assets/${assetName}`, `${blobUrl}/`);
       const assetResp = await fetch(assetUrl);
       if (!assetResp.ok) {
+        console.log(`Received HTTP ${assetResp.status} for asset ${assetName}: ${await assetResp.text()}`);
         return new Response('', { status: 500 });
       }
       let contentType = assetResp.headers.get('content-type');
